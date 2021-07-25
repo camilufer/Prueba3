@@ -1,0 +1,51 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet">  
+</head>
+<body>
+    <div class="alert alert-info">
+        <h1>@ViewData["msg"].ToString()</h1>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-6 offset-3">
+                <div class="mb-3 row">
+                    <label for="staticEmail" class="col-sm-2 col-form-label">Correo</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="email" placeholder="ingresa tu correo">
+                        <p><small>Ingresa un correo válido</small></p>
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Contraseña</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="inputPassword" placeholder="ingresa tu contraseña">
+                        <p><small>Ingresa un correo válido</small></p>
+                    </div>
+                </div>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button type="button" class="btn btn-success btn-sm">Enviar</button>
+                </div>
+                
+            </div> 
+           
+        </div>
+    </div>   
+
+    
+
+    <script src="~/Scripts/jquery-3.6.0.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+</body>
+</html>
